@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Astro v5.13.2" />
+    <title>Blog Template · Bootstrap v5.3</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/blog/"
+    />
+    <script src="../assets/js/color-modes.js"></script>
+    <meta name="theme-color" content="#712cf9" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link href="../css/blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="container-header">
+      <div class="logo">
+        <a href="./inicio.html"
+          ><img
+            src="../img/logoMayka.png"
+            alt="Logo de Mayka Crochet"
+            title="Logo de Mayka Crochet"
+        /></a>
+      </div>
+      <nav class="menu">
+        <ul class="nav justify-content-start bg-white">
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-activedescendant="page"
+              href="../inicio.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div id="imagen-blog" class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        <img src="../img/portadas/portada.jpg" class="imagen-blog" alt="">
+      </div>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+                >World</strong
+              >
+              <h3 class="mb-0">Featured post</h3>
+              <div class="mb-1 text-body-secondary">Nov 12</div>
+              <p class="card-text mb-auto">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg
+                aria-label="Placeholder: Thumbnail"
+                class="bd-placeholder-img"
+                height="250"
+                preserveAspectRatio="xMidYMid slice"
+                role="img"
+                width="200"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success-emphasis"
+                >Design</strong
+              >
+              <h3 class="mb-0">Post title</h3>
+              <div class="mb-1 text-body-secondary">Nov 11</div>
+              <p class="mb-auto">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+                <svg class="bi" aria-hidden="true">
+                  <use xlink:href="#chevron-right"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg
+                aria-label="Placeholder: Thumbnail"
+                class="bd-placeholder-img"
+                height="250"
+                preserveAspectRatio="xMidYMid slice"
+                role="img"
+                width="200"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-5">
+        <div class="col-md-9">
+          <h3 class="pb-4 mb-4 fst-italic border-bottom">From the Firehose</h3>
+
+          <!-- ...Post nuevos... -->
+          <div class="col-auto">
+            <div id="blog-posts"></div>
+          </div>
+          <!-- ...Fin posts nuevos... -->
+          <nav class="blog-pagination" aria-label="Pagination">
+            <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+            <a
+              class="btn btn-outline-secondary rounded-pill disabled"
+              aria-disabled="true"
+              >Newer</a
+            >
+          </nav>
+        </div>
+        <div class="col-md-3">
+          <div class="position-sticky" style="top: 2rem">
+            <div class="p-4 mb-3 bg-body-tertiary rounded">
+              <h4 class="fst-italic">About</h4>
+              <p class="mb-0">
+                Customize this section to tell your visitors a little bit about
+                your publication, writers, content, or something else entirely.
+                Totally up to you.
+              </p>
+            </div>
+            <div>
+              <h4 class="fst-italic">Recent posts</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="bd-placeholder-img"
+                      height="96"
+                      preserveAspectRatio="xMidYMid slice"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">Example blog post title</h6>
+                      <small class="text-body-secondary"
+                        >January 15, 2024</small
+                      >
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="bd-placeholder-img"
+                      height="96"
+                      preserveAspectRatio="xMidYMid slice"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">This is another blog post title</h6>
+                      <small class="text-body-secondary"
+                        >January 14, 2024</small
+                      >
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+                    href="#"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="bd-placeholder-img"
+                      height="96"
+                      preserveAspectRatio="xMidYMid slice"
+                      width="100%"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="100%" height="100%" fill="#777"></rect>
+                    </svg>
+                    <div class="col-lg-8">
+                      <h6 class="mb-0">
+                        Longer blog post title: This one has multiple lines!
+                      </h6>
+                      <small class="text-body-secondary"
+                        >January 13, 2024</small
+                      >
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="p-2">
+              <h4 class="fst-italic">Otras publicaciones</h4>
+              <!-- Ejemplo de barra lateral dinámica -->
+              <div id="sidebar-posts" class="list-group mb-3"></div>
+            </div>
+            <div class="p-4">
+              <h4 class="fst-italic">Elsewhere</h4>
+              <ol class="list-unstyled">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Social</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="logo-footer">
+        <img
+          src="../img/logoMayka.png"
+          alt="Logo de Mayka Crochet"
+          title="Logo de Mayka Crochet"
+        />
+      </div>
+
+      <div class="redes-sociales">
+        <h3>REDES SOCIALES</h3>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-whatsapp"></i>
+      </div>
+    </footer>
+    <script
+      src="../assets/dist/js/bootstrap.bundle.min.js"
+      class="astro-vvvwv3sm"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/blog.js"></script>
+  </body>
+</html>

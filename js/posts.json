@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Nuevo post de ejemplo",
+    "date": "31 de agosto, 2025",
+    "author": "Mayka",
+    "image": "../img/blog.jpg",
+    "content": "<p>¡Este es el contenido de tu primer post dinámico! Puedes usar <strong>HTML</strong> aquí. lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>"
+  },
+  {
+    "title": "Otro post dinámico",
+    "date": "30 de agosto, 2025",
+    "author": "Mayka",
+    "image": "../img/blog.jpg",
+    "content": "<p>Agrega tantos posts como quieras editando este archivo JSON.</p>"
+  },
+  {
+    "title": "Tercer post dinámico",
+    "date": "30 de agosto, 2025",
+    "author": "Luis",
+    "image": "../img/blog.jpg",
+    "content": "<p>He conseguido crear un post dinámico utilizando JSON y JavaScript.</p>"
+  }
+]
