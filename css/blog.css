@@ -146,6 +146,7 @@
 .container {
   width: 90% !important;
   max-width: 90% !important;
+  margin: 0px auto;
 }
 
 .imagen-blog {
@@ -154,7 +155,8 @@
   object-fit: cover;
 }
 
-h3:hover {
+h3:hover,
+.mb-0:hover {
   color: #EBA41B;
   transition: all 0.3s ease-in-out;
 }

@@ -19,5 +19,12 @@
     "author": "Luis",
     "image": "../img/blog.jpg",
     "content": "<p>He conseguido crear un post dinámico utilizando JSON y JavaScript.</p>"
+  },
+  {
+    "title": "Beneficios de tejer Crochet",
+    "date": "1 de Septiembre, 2025",
+    "author": "Raquel",
+    "image": "../img/blog.jpg",
+    "content": "<p>Tejer a crochet reduce el estrés y la ansiedad, beneficia tu salud fisica y mental, mejora tu autoestima, motricidad y la concentración. Además del bienestar emocional al liberar serotonina y dopamina. Manteniendo tu mente agil con distintos patrones de crochet. ¡Aumenta tu creatividad con el arte textil, creando y disfrutando!.</p>"
   }
 ]
