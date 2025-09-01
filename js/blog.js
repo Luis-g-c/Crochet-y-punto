@@ -13,11 +13,11 @@ function cargarPosts() {
         article.className = 'blog-post';
         article.innerHTML = `
         <div class="d-flex text-center mb-1">
-          <div class="col-auto d-none d-lg-block m-3">
+          <div class="col-auto d-none d-lg-block m-4">
             <img src="${post.image}" alt="Thumbnail" class="bd-placeholder-img" width="200" height="200">
           </div>
-          <div class="texto text-center mb-3">
-            <h3 class="display-6 link-body-emphasis mb-3">${post.title}</h3>
+          <div class="texto text-center mb-4">
+            <h3 class="display-6 mb-3">${post.title}</h3>
             ${post.content} 
             <p class="blog-post-meta">${post.date} por <a href="#">${post.author}</a></p>
           </div>

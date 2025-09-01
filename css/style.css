@@ -47,6 +47,13 @@
     color: #EBA41B;
 }
 
+/* Contenedor principal */
+.container-contenido {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 /* Imagen portada inicio */
 .imagen-portada {
     width: 100%;
