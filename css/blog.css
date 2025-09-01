@@ -173,6 +173,12 @@ h3:hover,
   color: #727272;
 }
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 /* Pie de pagina */
 .footer {
     width: 100%;

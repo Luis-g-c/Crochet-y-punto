@@ -151,8 +151,9 @@ footer .logo-footer {
 
 /* Pagina de contacto */
 .container-contacto {
-    width: 100%;
+    width: 90%;
     min-height: 680px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -180,7 +181,9 @@ footer .logo-footer {
     justify-content: start;
     width: 45%;
     height: 600px;
+    margin-right: 20px;
     border: 3px solid white;
+    box-shadow: 0 0 10px white;
     text-align: center;
 }
 
@@ -198,13 +201,15 @@ footer .logo-footer {
     font-weight: bold;
 }
 
+/* Formulario de contacto */
 .formulario {
-    width: 45%;
+    width: 40%;
     margin-top: 10px;
+    text-align: center;
 }
 
 .formulario form {
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px white;
     padding: 20px 10px 25px 10px;
     border-radius: 10px;
     display: flex;
@@ -217,7 +222,8 @@ footer .logo-footer {
     border: 0;
     background-color: white;
     font-size: 1.2em;
-    width: 100%;
+    width: 90%;
+    border-radius: 10px;
 }
 
 .formulario form input:focus {
@@ -227,9 +233,10 @@ footer .logo-footer {
 textarea {
     padding: 0.5em 1em;
     border: 0;
+    border-radius: 10px;
     background-color: white;
     font-size: 1.2em;
-    width: 100%;
+    width: 90%;
 }
 
 textarea:focus {
@@ -237,13 +244,15 @@ textarea:focus {
 }
 
 form button {
-    padding: .5em;
+    width: 50%;
+    margin: 0 auto;
+    padding: .3em;
     border: none;
     background-color: #eba41b;
     color: white;
     font-size: 1.2rem;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -266,4 +275,53 @@ legend {
     padding-inline: 0.5em;
     font-size: 1.25em;
     color: white;
+}
+
+/* Estilos para la tabla de tallasº */
+.tabla-tallas-section {
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 1rem;
+  background: #0CC0DF;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.tabla-tallas-wrapper {
+  overflow-x: auto;
+}
+
+.tabla-tallas {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.tabla-tallas th:first-child,
+.tabla-tallas td:first-child {
+  min-width: 120px;
+  width: 200px;
+  font-weight: bold;
+  background: #ffe7a3;
+  color: #7a5c00;
+}
+
+.tabla-tallas th {
+  background: #ffe7a3;
+  color: #7a5c00;
+  font-weight: bold;
+}
+
+.tabla-tallas tr {
+    height: 40px;
+}
+
+.tabla-tallas tr:nth-child(even) {
+  background: #fff9e3;
+}
+
+.tabla-tallas tr:hover {
+  background: #ffe7a3;
+  transition: background 0.2s;
 }
