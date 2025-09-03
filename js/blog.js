@@ -8,7 +8,7 @@ function cargarPosts() {
       const container = document.getElementById('blog-posts');
       if (!container) return;
       container.innerHTML = '';
-      posts.forEach(post => {
+      posts.slice().reverse().slice(0, 5).forEach(post => {
         const article = document.createElement('article');
         article.className = 'blog-post';
         article.innerHTML = `
@@ -39,7 +39,7 @@ function cargarSidebarPosts() {
       if (!sidebar) return;
       sidebar.innerHTML = '';
       // Solo los 5 más recientes
-      posts.slice().reverse().slice(0, 5).forEach(post => {
+      posts.forEach(post => {
         const item = document.createElement('a');
         item.className = 'list-group-item list-group-item-action';
         item.href = "#";
