@@ -67,6 +67,58 @@
     /* filter: brightness(50%); */
 }
 
+/* Articulo inicio */
+.contenido-articulo {
+    width: 100%;
+    margin: 0 auto;
+    margin: 20px 0;
+}
+
+.title-articulo {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Monotype corsiva;
+    text-align: center;
+    color: #0CC0DF;
+    margin: 20px auto;
+}
+
+.texto-articulo {
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    color: #333;
+    line-height: 1.5;
+    margin: 20px auto;
+}
+
+.tarjeta a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Pagina de llaveros */
+.card {
+    border: 2px solid #eba41b;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+.card img {
+    width: 30%;
+    height: auto;
+    margin: 10px auto;
+}
+
+#imagen-tazas {
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+}
+
 /* Galeria imagenes inicio */
 .galeria-imagenes {
     display: flex;
@@ -86,6 +138,12 @@
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
+    cursor: pointer;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px #9c6902;
 }
 
 .tarjeta img {
