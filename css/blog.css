@@ -225,3 +225,45 @@ footer .logo-footer {
 .footer .redes-sociales i:hover {
     color: #eba41b;
 }
+
+/* Comentarios */
+.comentarios {
+  margin-top: 2rem;
+  background: #fffbe7;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.comentarios h5 {
+  margin-bottom: 0.5rem;
+}
+.lista-comentarios {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+.lista-comentarios li {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #ffe7a3;
+  padding-bottom: 0.3rem;
+}
+.form-comentario input,
+.form-comentario textarea {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #e0c97f;
+  border-radius: 4px;
+}
+.form-comentario button {
+  display: block;
+  margin: 0 auto;
+  background: #ffe7a3;
+  color: #7a5c00;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-comentario button:hover {
+  background: #e0c97f;
+}
